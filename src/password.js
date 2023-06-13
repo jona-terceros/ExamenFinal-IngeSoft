@@ -1,6 +1,5 @@
 function password(text) {
     let cont=0;
-    let cantPalabras=4;
     let palabras=[];
     let separaciones=[" ","-",",",";","."];
     palabras.push(text);
@@ -10,7 +9,6 @@ function password(text) {
     }
     else{ 
         for(let i=0;i<palabras.length;i++){
-            //palabras.slice(text);
             if(palabras[i]===separaciones)
             {
                 return palabras;

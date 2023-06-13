@@ -13,4 +13,7 @@ describe("Password", () => {
   it("prueba con 3 palabras lo toma como una sola", () => {
     expect(password("hola son tres")).toEqual(1);
   });
+//   it("prueba intento contar 3 palabras", () => {
+//     expect(password("hola son tres")).toEqual(3);
+//   });
 });
