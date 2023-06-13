@@ -2,14 +2,21 @@ function password(text) {
     let cont=0;
     let cantPalabras=4;
     let palabras=[];
+    let separaciones=[" ","-",",",";","."];
+    palabras.push(text);
+
     if(text=="pass"){
         return "pass";
     }
-    for(let i=0;i<cantPalabras;i++){
-        palabras.push(text);
-        cont++;
+    else{
+        
+        for(let i=0;i<palabras.length;i++){
+            palabras[i]=cont;
+            cont++;
+        }
+        return cont;
     }
-    return cont;
+
     
   }
   

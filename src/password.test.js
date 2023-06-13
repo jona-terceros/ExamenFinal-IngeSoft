@@ -5,6 +5,9 @@ describe("Password", () => {
     expect(password("pass")).toEqual("pass");
   });
   it("deberia contar las palabras de la oracion", () => {
-    expect(password("pass en la pc")).toEqual(4);
+    expect(password("hola")).toEqual(1);
+  });
+  it("deberia contar las apariciones de las palabras", () => {
+    expect(password("pas")).toEqual(1);
   });
 });
