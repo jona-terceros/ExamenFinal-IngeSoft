@@ -8,16 +8,18 @@ function password(text) {
     if(text=="pass"){
         return "pass";
     }
-    else{
-        
+    else{ 
         for(let i=0;i<palabras.length;i++){
-            palabras[i]=cont;
+            //palabras.slice(text);
+            if(palabras[i]===separaciones)
+            {
+                return palabras;
+            }
             cont++;
         }
         return cont;
     }
-
-    
+   
   }
   
   export default password;

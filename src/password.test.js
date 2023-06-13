@@ -10,4 +10,7 @@ describe("Password", () => {
   it("deberia contar las apariciones de las palabras", () => {
     expect(password("pas")).toEqual(1);
   });
+  it("prueba con 3 palabras lo toma como una sola", () => {
+    expect(password("hola son tres")).toEqual(1);
+  });
 });
