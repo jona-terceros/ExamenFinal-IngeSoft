@@ -1,4 +1,4 @@
-function password(text) {
+function contarPalabras(text) {
     let cont=0;
     let palabras=[];
     let separaciones=[" ","-",",",";","."];
@@ -20,5 +20,5 @@ function password(text) {
    
   }
   
-  export default password;
+  export default contarPalabras;
   

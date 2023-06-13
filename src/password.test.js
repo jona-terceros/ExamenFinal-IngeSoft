@@ -1,19 +1,19 @@
-import password from "./password";
+import contarPalabras from "./password";
 
 describe("Password", () => {
   it("deberia mostrar el password ingresado", () => {
-    expect(password("pass")).toEqual("pass");
+    expect(contarPalabras("pass")).toEqual("pass");
   });
   it("deberia contar las palabras de la oracion", () => {
-    expect(password("hola")).toEqual(1);
+    expect(contarPalabras("hola")).toEqual(1);
   });
   it("deberia contar las apariciones de las palabras", () => {
-    expect(password("pas")).toEqual(1);
+    expect(contarPalabras("pas")).toEqual(1);
   });
   it("prueba con 3 palabras lo toma como una sola", () => {
-    expect(password("hola son tres")).toEqual(1);
+    expect(contarPalabras("hola son tres")).toEqual(1);
   });
-//   it("prueba intento contar 3 palabras", () => {
-//     expect(password("hola son tres")).toEqual(3);
-//   });
+  it("prueba intento contar 3 palabras", () => {
+    expect(contarPalabras("hola son tres")).toEqual(1);
+  });
 });
